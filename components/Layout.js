@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 
       <style global jsx>{`
         .utama {
-          min-height: calc(100vh - 53px - 81.6px);
+          min-height: calc(100vh - 80px - 81.6px);
         }
       `}</style>
     </>

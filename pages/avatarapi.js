@@ -16,29 +16,33 @@ const AvatarApiView = () => {
   };
 
   return (
-    <>
+    <div className="mainSection">
       <Head>
         <title>List Avatar Using API</title>
         <meta name="description" content="List Avatar" />
       </Head>
-      <button onClick={getAvatar}>Fetch Avatar</button>
-      <h1>List Avatar:</h1>
-      <ul>
-        {avatars &&
-          avatars.map((avatar) => (
-            <li key={avatar._id}>
-              <Link
-                href={{
-                  pathname: `/avatarapi/${avatar._id}`,
-                }}
-                as={`/avatarapi/${avatar._id}`}
-              >
-                <a style={{ color: "blue" }}>{avatar.name}</a>
-              </Link>
-            </li>
-          ))}
-      </ul>
-    </>
+      <div style={{
+        padding: "80px 0 80px 0"
+      }}>
+        <button onClick={getAvatar}>Fetch Avatar</button>
+        <h1>List Avatar:</h1>
+        <ul>
+          {avatars &&
+            avatars.map((avatar) => (
+              <li key={avatar._id}>
+                <Link
+                  href={{
+                    pathname: `/avatarapi/${avatar._id}`,
+                  }}
+                  as={`/avatarapi/${avatar._id}`}
+                >
+                  <a style={{ color: "blue" }}>{avatar.name}</a>
+                </Link>
+              </li>
+            ))}
+        </ul>
+      </div>
+    </div>
   );
 };
 

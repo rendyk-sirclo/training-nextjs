@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 const Custom404 = () => {
   const [countdown, setCountdown] = useState(5);
@@ -31,6 +32,9 @@ const Custom404 = () => {
         minHeight: "100vh",
       }}
     >
+      <Head>
+        <title>404</title>
+      </Head>
       <span style={{ fontSize: "48px", fontWeight: 700 }}>Custom 404</span>
       <span style={{ fontSize: "18px", opacity: "60%" }}>Redirect to home after {countdown}s</span>
       <style jsx>{`

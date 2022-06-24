@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const Avatar = () => {
   return (
-    <>
+    <div className="mainSection">
       <Head>
         <title>List Avatar</title>
         <meta name="description" content="List Avatar" />
@@ -31,7 +31,7 @@ const Avatar = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

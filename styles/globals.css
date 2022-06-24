@@ -24,3 +24,7 @@ a {
   font-weight: 700;
   text-align: center;
 }
+
+.mainSection {
+  padding: 0 2rem;
+}
