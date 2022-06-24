@@ -1,0 +1,7 @@
+.navbar li {
+  display: inline;
+}
+
+.navbar li > a {
+  padding: 16px 14px;
+}
